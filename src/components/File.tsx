@@ -1,9 +1,15 @@
 import React from "react";
-
-type Props = {};
-
+import styles from "../styles/file.module.css";
+import { FcFile } from "react-icons/fc";
+type Props = {
+  name: string;
+};
 const File = (props: Props) => {
-  return <div>This is a file</div>;
+  return (
+    <div className={styles.file}>
+      <FcFile /> {props.name}
+    </div>
+  );
 };
 
 export default File;

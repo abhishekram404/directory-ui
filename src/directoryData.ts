@@ -1,21 +1,31 @@
 const directoryData = {
   name: "root",
   isFolder: true,
-  children: [
+  content: [
     {
       name: "public",
       isFolder: true,
-      children: [
+      content: [
         { name: "index.html", isFolder: false },
         { name: "favicon.ico", isFolder: false },
-        { name: "manifest.json", isFoler: false },
+        { name: "manifest.json", isFolder: false },
       ],
     },
     {
       name: "src",
       isFolder: true,
-      children: [
-        { name: "components", isFolder: true, children: [] },
+      content: [
+        {
+          name: "styles",
+          isFolder: true,
+          content: [
+            {
+              name: "App.scss",
+              isFolder: false,
+            },
+          ],
+        },
+        { name: "components", isFolder: true, content: [] },
         { name: "App.jsx", isFolder: false },
         { name: "App.css", isFolder: false },
         { name: "index.js", isFolder: false },

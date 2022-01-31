@@ -1,0 +1,17 @@
+.folder {
+  color: #000;
+  cursor: pointer;
+  margin: 5px 0;
+}
+
+.folderContentLength {
+  color: #6f6f6f;
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+.content {
+  border-left: 1px solid #6f6f6f;
+  padding-left: 5px;
+  margin-left: 30px;
+}
